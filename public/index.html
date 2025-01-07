@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+  
+
+<head>
+  <title>SimpleWiki</title>
+
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width">
+
+<meta name="description" content="A simple Jekyll wiki theme">
+
+<meta name="google-site-verification" content="EqtKYUkYs-JttF6_8XsoKWZod8Qc2F4jvv3krniYebE" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384–1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="stylesheet" href="/simple-wiki/assets/css/main.css">
+<style type="text/css">
+  :root {
+    --bs-breadcrumb-divider: '/';
+  }
+
+  .breadcrumb-item {
+    font-size: 1.25rem;
+  }
+</style>
+
+
+  <link rel="shortcut icon" type="image/png" href="/simple-wiki/assets/img/favicon.png">
+</head>
+
+  <body>
+  <header class="pb-0 py-2">
+  <div class="container">
+    <div class="d-flex gap-3 flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/simple-wiki/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <img src="/simple-wiki/assets/img/svg/simple_wiki_medium.svg" alt="logo" width="128px">
+      </a>
+
+      <h2 class="col-12 col-lg-auto me-lg-auto mb-2 mb-lg-0 text-center">
+        <small>
+          A simple Jekyll wiki theme
+        </small>
+      </h2>
+      <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-3" action="/simple-wiki/search/" method="get">
+        <input type="search" class="form-control" name="q" placeholder="Search..." aria-label="Search">
+      </form>
+    </div>
+
+<ul class="nav nav-tabs mb-3 justify-content-between d-flex" id="pageTab" role="tablist">
+  <!-- Breadcrumb à gauche -->
+  
+
+
+
+
+<nav aria-label="breadcrumb" class="align-content-center" style="--bs-breadcrumb-divider: '»';">
+  <ol class="breadcrumb mb-0 mt-2">
+    <li class="breadcrumb-item">
+    
+      
+	<li class="breadcrumb-item active" aria-current="page">Home</li>
+      
+    
+  </ol>
+</nav>
+
+
+
+  <!-- Les éléments de droite (Read et Source Code) -->
+  <li class="d-flex nav-item ms-auto mt-2" role="presentation">
+    <button class="nav-link active" id="read-tab" data-bs-toggle="tab" data-bs-target="#read" type="button" role="tab" aria-controls="read" aria-selected="true">
+      Read
+    </button>
+    <button class="nav-link" id="source-code-tab" data-bs-toggle="tab" data-bs-target="#source-code" type="button" role="tab" aria-controls="source-code" aria-selected="false">
+      Source code
+    </button>
+  </li>
+</ul>
+
+  </div>
+</header>
+
+
+  <main class="container content">
+  	<div class="tab-content" id="pageTabContent">
+  		<div class="tab-pane fade show active" id="read" role="tabpanel" aria-labelledby="read-tab">
+  			<h2 id="welcome-to-the-index-page">Welcome to the index page</h2>
+
+<p>You can find all the articles in the <a href="/simple-wiki/wiki">wiki page</a>.</p>
+
+<h2 id="about">About</h2>
+<p>This website is powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> using the <a href="https://github.com/shadokos/simple-wiki" target="_blank" rel="noopener noreferrer">SimpleWiki</a> theme.
+It is mainly developed to document the <a href="https://github.com/shadokos/kfs.git" target="_blank" rel="noopener noreferrer">ShadokOS</a> project, a unix-like operating system written entirely in <a href="https://ziglang.org/" target="_blank" rel="noopener noreferrer">⚡Zig</a> programming language.</p>
+
+
+  		</div>
+  		<div class="tab-pane fade" id="source-code" role="tabpanel" aria-labelledby="source-code-tab">
+  			
+  			
+  			
+  			
+
+  			<b>Repository</b>: riblanc/simple-wiki<br>
+  			<b>Build revision</b>: 7d239a568c4c9e5fefbe7877a500e33777552782<br>
+  			<b>File path</b>: index.md<br>
+
+
+  			      <div>
+        <div class="highlight">
+          <div class="file-header">
+            markdown  ///  <a href="https://github.com/riblanc/simple-wiki/blob/7d239a568c4c9e5fefbe7877a500e33777552782/index.md" target="_blank" rel="noopener noreferrer">index.md</a>
+          </div>
+          <pre><code class="language-markdown"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">default</span>
+<span class="nn">---</span>
+
+<span class="gu">## Welcome to the index page</span>
+
+You can find all the articles in the <span class="p">[</span><span class="nv">wiki page</span><span class="p">](</span><span class="sx">{{site.baseurl}}/wiki</span><span class="p">)</span>.
+
+<span class="gu">## About</span>
+This website is powered by <span class="p">[</span><span class="nv">Jekyll</span><span class="p">](</span><span class="sx">https://jekyllrb.com/</span><span class="p">)</span> and <span class="p">[</span><span class="nv">GitHub Pages</span><span class="p">](</span><span class="sx">https://pages.github.com/</span><span class="p">)</span> using the <span class="p">[</span><span class="nv">SimpleWiki</span><span class="p">](</span><span class="sx">https://github.com/shadokos/simple-wiki</span><span class="p">)</span> theme.
+It is mainly developed to document the <span class="p">[</span><span class="nv">ShadokOS</span><span class="p">](</span><span class="sx">https://github.com/shadokos/kfs.git</span><span class="p">)</span> project, a unix-like operating system written entirely in <span class="p">[</span><span class="nv">⚡Zig</span><span class="p">](</span><span class="sx">https://ziglang.org/</span><span class="p">)</span> programming language.<span class="sb">
+
+
+</span></code></pre>
+        </div>
+      </div>
+
+  			
+  		</div>
+  	</div>
+  </main>
+
+  <footer class="footer py-3">
+  <div class="container">
+    <hr>
+    <div class="d-flex justify-content-center mb-3">
+      <small>
+        - Made with
+        <img src="/simple-wiki/assets/img/svg/monster-energy.svg" width="24px">
+        by <a href="https://github.com/riblanc" target="_blank" rel="noopener noreferrer">riblanc</a> -
+      </small>
+    </div>
+    <small style="color: #777">
+      Content is available under <a href="/simple-wiki/license">MIT License</a>.<br>
+      © <time datetime="2025-01-07T05:39:04+00:00">2025</time> SimpleWiki.
+    </small>
+  </div>
+</footer>
+
+</body>
+
+</html>
