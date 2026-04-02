@@ -5,24 +5,16 @@
 
 @import "font";
 @import url(github-dark.css);
+@import url(github-markdown.css);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 :root {
   color-scheme: light;
 }
 
-.highlight {
-  border-radius: .25rem;
-  margin: 1rem 0;
-}
-
-.highlight pre {
-    padding: 1rem;
-}
-
-hr {
-  margin: 20px 0;
-}
+// ===========================================
+// Links - Custom colors for the site
+// ===========================================
 
 a {
   color: #d1922b;
@@ -30,4 +22,116 @@ a {
 
 a:hover {
   color: #8d2f00;
+}
+
+// ===========================================
+// Markdown body customizations
+// ===========================================
+
+.markdown-body {
+  // Remove default padding/max-width from github-markdown-css
+  // since we're using Bootstrap container
+  padding: 0;
+  max-width: none;
+  font-size: 16px;
+  line-height: 1.7;
+
+  // Keep our link colors
+  a {
+    color: #d1922b;
+    
+    &:hover {
+      color: #8d2f00;
+    }
+  }
+
+  // ===========================================
+  // Code blocks - github-dark theme
+  // ===========================================
+  
+  .highlight {
+    border-radius: 6px;
+    margin: 16px 0;
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+    
+    pre {
+      padding: 16px !important;
+      margin: 0 !important;
+      border-radius: 6px !important;
+      background-color: #161b22 !important;
+      color: #c9d1d9 !important;
+    }
+    
+    code {
+      background-color: transparent !important;
+      color: #c9d1d9 !important;
+    }
+  }
+  
+  // Force github-dark syntax colors inside highlight blocks
+  .highlighter-rouge .highlight,
+  div.highlight {
+    // Base text color
+    color: #c9d1d9 !important;
+    
+    pre, code {
+      color: #c9d1d9 !important;
+    }
+  }
+
+  // ===========================================
+  // Inline code - Light gray background, colored text
+  // ===========================================
+  
+  code.highlighter-rouge,
+  code.language-text {
+    padding: 0.2em 0.4em !important;
+    background-color: rgba(175, 184, 193, 0.2) !important;
+    border-radius: 6px !important;
+    font-size: 85% !important;
+    color: inherit !important;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  }
+}
+
+// ===========================================
+// github_include plugin - MUST override github-markdown-css
+// ===========================================
+
+.markdown-body .highlight .file-header,
+.highlight .file-header {
+  background-color: #2a3037 !important;
+  border-radius: 6px 6px 0 0 !important;
+  padding: 8px 16px !important;
+  display: block !important;
+  
+  a {
+    color: #fff !important;
+    text-decoration: none !important;
+    
+    &:hover {
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.markdown-body .highlight .file-header + pre,
+.highlight .file-header + pre {
+  border-radius: 0 0 6px 6px !important;
+}
+
+.markdown-body .github-filepath,
+.github-filepath {
+  background-color: #516767 !important;
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
+  text-decoration: none !important;
+  color: #fff !important;
+  
+  &:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+  }
 }
