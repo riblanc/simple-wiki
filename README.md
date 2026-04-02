@@ -1,4 +1,4 @@
-<p align=center><img src="https://github.com/user-attachments/assets/5c043d7d-890e-4c68-88af-ac1df5fb9ce5" width="200px"/></p>
+<p align=center><img src="https://github.com/user-attachments/assets/e42ef72b-f85c-434b-a984-12b8e88a5a24" width="200px"/></p>
 <h3 align=center>
     Simple wiki theme for Jekyll
   <br><br>
